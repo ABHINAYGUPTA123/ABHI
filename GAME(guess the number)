@@ -1,0 +1,21 @@
+#guess the number
+n = 18
+i = 9
+while i>=0:
+    i= i-1
+    print("enter ur guess no.")
+    num1 = int(input())
+    print("chances left =", i)
+    if num1 ==18:
+        print("won")
+        print("no. of guesses he took is", i)
+        break
+    elif (i == 0):
+        print("game over")
+        break
+    elif(num1<18):
+        print("enter the no. more than this")
+    elif(num1>18):
+        print("enter the no. less than this")
+    else:
+        print("danger")
