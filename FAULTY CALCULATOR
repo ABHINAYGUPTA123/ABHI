@@ -1,0 +1,25 @@
+# faulty calculator
+# 45 * 3 = 555, 56 + 9 = 77, 56/6 = 4
+#otherwise right answer
+
+print("enter two nos")
+a = int(input())
+b = int(input())
+print("enter operator")
+w = input()
+if a == 56 and b== 9 and w== "+":
+    print(77)
+elif a == 45 and b == 3 and w== "*":
+    print(555)
+elif a == 56 and b == 6 and w== "/":
+    print(4)
+elif w == "+":
+    print(a+b)
+elif w == "*":
+    print(a*b)
+elif w == "/":
+    print(a/b)
+elif w == "-":
+    print(a-b)
+else:
+    print("pls check ur input")
