@@ -1,0 +1,43 @@
+import random
+i = 0
+count = 0
+user_count = 0
+comp_count = 0
+tie = 0
+while(i<10):
+    i = i+1
+    print("Choose for snake,  water or gun")
+    choice1 = input()                                        #choice1 is me
+    lst = ["snake", "water", "gun"]
+    choice2 = random.choice(lst)                             # choice2 is computer
+    count = count+1
+    if choice1 == "snake" and choice2 == "water":
+        print("You win")
+        user_count = user_count+1
+    elif choice1 == "snake" and choice2 == "gun":
+        print("you lost")
+        comp_count = comp_count+1
+    elif choice1 == "water" and choice2 == "snake":
+        print("You lost")
+        comp_count = comp_count + 1
+    elif choice1 == "water" and choice2 == "gun":
+        print("You win")
+        user_count = user_count + 1
+    elif choice1 == "gun" and choice2 == "snake":
+        print("You win")
+        user_count = user_count + 1
+    elif choice1 == "gun" and choice2 == "water":
+        print("You lost")
+        comp_count = comp_count + 1
+    else:
+        print("TIE")
+        tie = tie +1
+print("you win=",user_count,"times")
+print("you lost=",comp_count,"times")
+print("Match tie=",tie,"times")
+if user_count>comp_count:
+    print("You win")
+elif user_count<comp_count:
+    print("You lost")
+else:
+    print("Tie")
