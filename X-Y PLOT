@@ -1,0 +1,15 @@
+from matplotlib import pyplot as plt
+from matplotlib import style
+style.use("ggplot")
+x = [3,5,8]
+y = [4,8,2]
+x1 = [0,5,4]
+y1 = [4,9,3]
+plt.plot(x,y,"g",label="line(1)", linewidth=5)
+plt.plot(x1,y1,"r",label="line(2)", linewidth=5)
+plt.title("Epic info")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-Axis")
+plt.legend()
+plt.grid(True,color="k")
+plt.show()
