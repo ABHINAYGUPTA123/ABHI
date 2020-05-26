@@ -1,5 +1,5 @@
 # faulty calculator
-# 45 * 3 = 555, 56 + 9 = 77, 56/6 = 4
+# 45 * 3 = 555, 56 + 9 = 77, 56/6 = 4 ...
 #otherwise right answer
 
 print("enter two nos")
